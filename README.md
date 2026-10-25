@@ -1,18 +1,39 @@
 # mbx-book-translation
 
-把整本书或长篇文章翻译成中文，或转成 Markdown 的 Agent Skill。支持文本层 PDF、EPUB、DOCX、扫描件，也支持 Markdown、HTML、剪藏长文。
+把整本书或长篇文章翻译成中文，也能只转 Markdown。
 
-## 能做什么
+## 为什么用它
 
-| 源文 | 翻译 | 只转 Markdown |
-|---|---|---|
-| 文本层 PDF / EPUB / DOCX | ✓ | ✓ |
-| 扫描书 | OCR 后翻译 | OCR 后只转 Markdown |
-| 长篇文章 / 连载 / 作者自媒体长文 | ✓ | ✓ |
+Agent 自己会翻译。短文章、单段文字，直接让它翻就行，不需要这个 skill。
 
-扫描书不是只能转 MD：先 OCR，之后可以继续翻译，也可以停在 Markdown。
+整本书不一样：几百页，Agent 一口气翻，容易忘前面的人名，漏页、把两段粘成一段；扫描件还会读错字。翻到后面，说法也可能和前面不一样。
 
-不接：短句、截图识字、单页短文、Obsidian 库整体翻译。
+这个 skill 把整本书拆成小步：先拆书、查缺页，统一人名和术语，再一章章翻，最后用脚本检查段落、数字、单位、页码和漏译。翻错了能定位，长书能分几次跑。
+
+一句话：和只给 Agent 一段翻译提示词不同，这个 skill 给整本书配了一套流程和检查工具。
+
+## 它具体做什么
+
+1. **拆书**：PDF / EPUB / DOCX 按章切开；扫描书先 OCR。
+2. **体检**：查页数、字数、缺页、图片和乱码。
+3. **统一说法**：人名、地名、术语先定好，后面每章都用同一套。
+4. **逐章翻译**：一章一章来，长书可以分多次跑。
+5. **机器检查**：看段落有没有少、数字和单位有没有漏、页码和标记有没有混进正文。
+6. **合成**：按书名和章节输出 Markdown；也可以只转 MD，不翻译。
+
+## 特点
+
+- 整本书、长篇文章都能做，不是只翻一段。
+- 扫描书也能翻：先 OCR，再翻译。
+- 人名、术语前后统一，不会这章一个叫法、下章另一个叫法。
+- 用脚本做检查，不靠「感觉翻得差不多」。
+- 可以只转 Markdown，也可以断了接着跑。
+
+## 适合 / 不适合
+
+适合：整本书、长篇文章、连载、作者自媒体长文、扫描书。
+
+不适合：一句话、短截图、单页短文。
 
 ## 安装
 
@@ -20,39 +41,13 @@
 npx skills add kissfirembx/mbx-book-translation
 ```
 
-或把仓库放进 Agent 的 skills 目录，至少保留 `SKILL.md`、`references/`、`scripts/`。
-
-## 依赖
+需要 Python 3.10+，并安装依赖：
 
 ```bash
 pip install -r requirements.txt
 ```
 
-- Python 3.10+
-- `pymupdf`：PDF 渲染与提取
-- `jieba`：中文分词
-- 扫描书另需 [PaddleOCR-json](https://github.com/hiroi-sora/PaddleOCR-json)，外部程序，不随仓库分发
-
-## 配置
-
-路径走环境变量，不写死个人目录：
-
-| 变量 | 默认 | 说明 |
-|---|---|---|
-| `MBX_BOOKS_DIR` | `./books` | 书籍/长文输出根 |
-| `MBX_TERMS_DIR` | `<输出根>/_术语体系` | 术语库 |
-| `MBX_OCR_EXE` | 空 | PaddleOCR-json 可执行文件 |
-| `MBX_OCR_ENGINE_DIR` | `MBX_OCR_EXE` 所在目录 | `PPOCR_api.py` 所在目录 |
-| `MBX_USAGE_LEDGER` | `~/.dsh/dsh-usage/usage-ledger.json` | 可选 |
-| `MBX_VAULT_ROOT` | 空 | Obsidian 库根，可选 |
-
-本机覆盖写到 `references/环境与配置.local.env`（不发布），格式：
-
-```text
-MBX_BOOKS_DIR=D:/books/translation
-MBX_OCR_EXE=D:/tools/PaddleOCR-json/PaddleOCR-json.exe
-MBX_OCR_ENGINE_DIR=D:/tools/PaddleOCR-json
-```
+扫描书另需 PaddleOCR-json，外部程序，不随仓库分发。
 
 ## 使用
 
@@ -68,14 +63,7 @@ MBX_OCR_ENGINE_DIR=D:/tools/PaddleOCR-json
 
 不用套固定句式。输出目录、是否翻译、质量档，Agent 会按流程确认；如果你有自己的目录习惯，直接告诉它。
 
-详细规则在 `references/`：
-
-- `mode-a-text.md`：文本层书与长文翻译
-- `mode-b-ocr.md`：扫描书 OCR，可翻译或只转 MD
-- `mode-c-format.md`：只做格式转换
-- `翻译规范.md`、`译名规范.md`、`输出结构与命名.md`
-- `executor-prompt-templates.md`：译者 prompt 模板
-- `脚本索引.md`：脚本用途与入口
+配置项见 `references/环境与配置.md`。
 
 ## 许可
 

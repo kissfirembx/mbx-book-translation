@@ -1,6 +1,6 @@
 ---
 name: mbx-book-translation
-description: 把整本外文书（PDF/EPUB/DOCX/扫描件）或长篇文章翻译成中文或转为 Markdown，含扫描版 OCR、术语统一、目录与注释整理。当用户要翻译整本书、长文/连载、扫描书 OCR 或整本书转 MD 时使用；短句、截图、单页短文不接。
+description: 把整本书（PDF/EPUB/DOCX/扫描件）或长文翻译成中文：拆书/OCR、统一术语、逐章翻译，再用脚本查段落、数字、单位、缺页，最后合成；也能只转 Markdown。用户要整本翻译、扫描书 OCR、长文/连载时使用；短句、截图、单页短文不接。
 ---
 
 # 书籍与长文翻译转 MD
