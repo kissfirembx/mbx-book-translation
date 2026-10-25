@@ -1,7 +1,7 @@
 {
   "name": "mbx-book-translation",
-  "version": "1.0.3",
-  "generated_at": "2026-10-25T23:34:16+08:00",
+  "version": "1.0.4",
+  "generated_at": "2026-10-25T23:43:58+08:00",
   "files": [
     {
       "path": ".github/workflows/gates.yml",
@@ -15,8 +15,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1349,
-      "sha256": "2a316e07f2e1f60bff3c075acd10332d1e37dfbc8746632e99bf77d26d32a055"
+      "bytes": 1686,
+      "sha256": "bba8231fe4731578741a68096d517289a9f50ab9150b07d0d1b1dbb8d65ffd22"
     },
     {
       "path": "LICENSE",
@@ -25,13 +25,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 2391,
-      "sha256": "736d42b9a4c319259d255cb981115eb39c6c58f1236398db24d909823c35c8ad"
+      "bytes": 3800,
+      "sha256": "447331c6388d1c3c12a02a49db497b3478b2c863376f7d1f103b7e54de06d25f"
     },
     {
       "path": "SKILL.md",
-      "bytes": 7880,
-      "sha256": "8d819d3eebf8ddc8eff785517a8a258f20ae567b000cccdb25157109f652d912"
+      "bytes": 8036,
+      "sha256": "f5c6a8d8512615962ea3b70e87fce737d0cc1b0782293c2f287e65b33ae31c09"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -40,8 +40,8 @@
     },
     {
       "path": "evals/gates/run_gate_tests.py",
-      "bytes": 20177,
-      "sha256": "617980ec8a8dd179c1b9a008371b0018cfc24f0fe06e037bc087e2a143a00ba0"
+      "bytes": 20762,
+      "sha256": "d84ff0f56095259026b9e0ea415b86af416f40776344b42c1f0fe9c587b219f1"
     },
     {
       "path": "evals/quality/README.md",
@@ -160,8 +160,8 @@
     },
     {
       "path": "references/编排与分发.md",
-      "bytes": 5384,
-      "sha256": "e4f093ed4ebba23dfa8fc2c35b30fff2e9a805c040d54b9ac6c55e735f0f29c0"
+      "bytes": 5863,
+      "sha256": "784816bd7b38840bfc89a89aacd0d7686299015a24ac5a9bb05a2f1264d58e88"
     },
     {
       "path": "references/翻译规范.md",
@@ -170,8 +170,8 @@
     },
     {
       "path": "references/脚本索引.md",
-      "bytes": 15549,
-      "sha256": "98a1dead67a5da8197d4712440117d3ad526f13ddbe68888efd6edbf756bc3d0"
+      "bytes": 15801,
+      "sha256": "4bc45045b97b40f19abd0b63e37b57bee59db024fa1723efd0e0e898a5a25179"
     },
     {
       "path": "references/译名规范.md",
@@ -332,6 +332,11 @@
       "path": "scripts/patch_preview.py",
       "bytes": 13148,
       "sha256": "52feb3fe8d9fec6320a94d8841de556e42ebf1cdf5ae1f7500ae09f6a4bb11e8"
+    },
+    {
+      "path": "scripts/plan_batches.py",
+      "bytes": 5203,
+      "sha256": "0dbffd50fd53474a3fcbe03e460da2e8edb070e8ba763b723fd08f77d3d26764"
     },
     {
       "path": "scripts/preflight_probe.py",

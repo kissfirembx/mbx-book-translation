@@ -341,11 +341,23 @@ def t_rare(tmp):
     return out
 
 
+def t_plan(tmp):
+    bd = os.path.join(tmp, "planbook")
+    se = os.path.join(bd, "source_en")
+    os.makedirs(se, exist_ok=True)
+    w(os.path.join(se, "01.txt"), ("word " * 100) + "\n")
+    w(os.path.join(se, "02.txt"), ("word " * 120) + "\n")
+    rc, s = run("plan_batches.py", ["--book-dir", bd, "--context-window", "200000",
+                                    "--fixed-overhead", "10000", "--json"])
+    return [("按上下文窗口分批应输出批次", rc == 0 and '"total_chapters": 2' in s
+             and '"batches"' in s, s.strip()[:90])]
+
+
 ALL = [("markup", t_markup), ("unit", t_unit), ("numbers", t_numbers),
        ("paragraph", t_paragraph), ("normalize", t_normalize), ("idiom", t_idiom),
        ("preflight", t_preflight), ("unwrap", t_unwrap), ("patch", t_patch),
        ("slice", t_slice), ("clean_flat_lists", t_clean_flat_lists), ("ocr", t_ocr),
-       ("rare", t_rare)]
+       ("rare", t_rare), ("plan", t_plan)]
 
 
 def main():

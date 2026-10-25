@@ -49,7 +49,7 @@ EPUB / DOCX 按文本层处理；DOCX 解包读 `word/document.xml`。加密 PDF
 | 1 提取 | `extract_pdf_text.py` / `extract_epub_text.py` | OCR（`ocr_pdf.py`，B1–B3）→ `rebuild_source_from_ocr.py` 或 `--md-out` | `extract_pdf_text.py` / `extract_epub_text.py` |
 | 2 体检 | `preflight_probe.py` + 覆盖率 + `rewrap_source_lines.py` + 成本预估 | 同左 | `preflight_probe.py`（覆盖率可选） |
 | 3 冻结 | 术语 / 格式 / 图锚点 / 文种 | 同左 | 格式 / 命名 |
-| 4 翻译 | 批量 + 审校 | 同左 | — |
+| 4 翻译 | 按模型窗口分批 + 审校 | 同左 | — |
 | 5 质检 | 审校 + 人在回路 | 同左 | 格式 QA |
 | 6 交付 | 清单 + 沉淀 + 记账 | 同左 | 清单 + 命名 |
 
@@ -60,7 +60,7 @@ B 分两格：**B + 翻译**（步骤 4 正常）；**B 只转 MD**（步骤 4 �
 - 1 提取：`references/mode-a-text.md` A1、`references/mode-b-ocr.md` B1–B3、`references/mode-c-format.md` C1
 - 2 体检：`references/源文体检.md`
 - 3 冻结：`references/mode-a-text.md` A2 + `references/executor-prompt-templates.md`
-- 4 翻译：`references/executor-prompt-templates.md` + `references/编排与分发.md`
+- 4 翻译：批量前跑 `scripts/plan_batches.py --book-dir <书> --context-window <模型窗口>`，按窗口与 3 万中文字上限装批；再套 `references/executor-prompt-templates.md` 与 `references/编排与分发.md`
 - 5 质检：`references/mode-a-text.md` A4 + `references/关于流畅度质检.md`
 - 6 交付：`references/输出结构与命名.md` + `references/成本优化.md`
 
