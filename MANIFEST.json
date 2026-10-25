@@ -1,7 +1,7 @@
 {
   "name": "mbx-book-translation",
-  "version": "1.0.0",
-  "generated_at": "2026-10-25T22:44:26+08:00",
+  "version": "1.0.1",
+  "generated_at": "2026-10-25T22:49:07+08:00",
   "files": [
     {
       "path": ".github/workflows/gates.yml",
@@ -15,13 +15,13 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 778,
-      "sha256": "fa9ea61df4fdf9630f118cd0ca05bfac5d1b4ffb5b9c261df966c706d9afeaf5"
+      "bytes": 847,
+      "sha256": "6f3a6c3a8d6ae90f41801360aa084457c33e6ad4026c1cc299d3434d1637c647"
     },
     {
       "path": "LICENSE",
-      "bytes": 1064,
-      "sha256": "d3742012c1fdbe212a6e0fc403f57c16b721ef3844ec752132f7976993f12d88"
+      "bytes": 1068,
+      "sha256": "09686d29f677d8a83528843e6c234d3df944fa8876211c55ec780e60162c2b82"
     },
     {
       "path": "README.md",
