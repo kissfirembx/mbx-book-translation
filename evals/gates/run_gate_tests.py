@@ -349,7 +349,7 @@ def t_plan(tmp):
     w(os.path.join(se, "02.txt"), ("word " * 120) + "\n")
     rc, s = run("plan_batches.py", ["--book-dir", bd, "--context-window", "200000",
                                     "--fixed-overhead", "10000", "--json"])
-    return [("按上下文窗口分批应输出批次", rc == 0 and '"total_chapters": 2' in s
+    return [("按上下文窗口分派任务应输出任务组", rc == 0 and '"total_chapters": 2' in s
              and '"batches"' in s, s.strip()[:90])]
 
 
