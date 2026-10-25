@@ -13,7 +13,7 @@
 
 ## 外部程序
 
-- PaddleOCR-json / Umi-OCR
+- PaddleOCR-json
   扫描书 OCR 的外部依赖，不随本仓库分发。安装与使用遵循其各自许可证。
 - PyMuPDF、jieba
   Python 依赖，见 `requirements.txt`；遵循各自许可证。

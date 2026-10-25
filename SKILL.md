@@ -1,19 +1,19 @@
 ---
 name: mbx-book-translation
-description: 把整本外文书（PDF/EPUB/DOCX/扫描件）翻译成中文或转为 Markdown，含扫描版 OCR、术语统一、目录与注释整理。当用户要翻译整本书、整本扫描书 OCR 或整本书转 MD 时使用；只处理整本书，单页、短文、截图交给对应工具。
+description: 把整本外文书（PDF/EPUB/DOCX/扫描件）或长篇文章翻译成中文或转为 Markdown，含扫描版 OCR、术语统一、目录与注释整理。当用户要翻译整本书、长文/连载、扫描书 OCR 或整本书转 MD 时使用；短句、截图、单页短文不接。
 ---
 
-# 书籍翻译与转 MD
+# 书籍与长文翻译转 MD
 
-把一本外文书完整转换为中文 Markdown，或按原语言转成高质量 Markdown。三种模式：**A 文本层翻译**、**B 扫描 OCR**（可翻译，也可只转 MD）、**C 纯格式转 MD**。
+把一本外文书或一篇长文完整转换为中文 Markdown，或按原语言转成高质量 Markdown。三种模式：**A 文本层翻译**、**B 扫描 OCR**（可翻译，也可只转 MD）、**C 纯格式转 MD**。
 
 本入口只放流程、停止条件与用户门。条件性细节在 `references/`，确定性操作在 `scripts/`。
 
 ## 1. 用途与边界
 
-适用于整本书：PDF、EPUB、DOCX、扫描件。
+适用于整本书（PDF、EPUB、DOCX、扫描件）和长篇文章（Markdown、HTML、连载、作者自媒体长文）。
 
-不接：单页或单份文档提取、网页或短文翻译、截图识字、Obsidian 库整体翻译。
+不接：短句、截图识字、单页短文、Obsidian 库整体翻译。
 
 ## 2. 入口判定
 
@@ -26,11 +26,13 @@ description: 把整本外文书（PDF/EPUB/DOCX/扫描件）翻译成中文或�
 
 EPUB / DOCX 按文本层处理；DOCX 解包读 `word/document.xml`。加密 PDF 走 S2。判定命令与阈值见 `references/源文体检.md`。
 
+长文/连载按标题或自然小节切，不强行套书级目录；没有书级目录就跳过目录页解析，其余仍走 A2–A5。
+
 ## 3. 开工门 G1
 
 一条消息最多三问：
 
-1. 输出目录：默认 `$MBX_BOOKS_DIR/<书名>/`；未设置时 `./books/<书名>/`。用户给路径就用给的；本机值见 `references/环境与配置.local.env`。
+1. 输出目录：默认 `$MBX_BOOKS_DIR/<书名或标题>/`；未设置时 `./books/<书名或标题>/`。用户给路径就用给的；本机值见 `references/环境与配置.local.env`。
 2. 翻译，还是只转 MD。
 3. 质量档：默认**自读**；要精确翻译说一声。
 

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """ocr_pdf.py —— 扫描 PDF 逐页 OCR → 按页 JSON
 
-通用驱动：PaddleOCR-json（Umi-OCR 自带）+ PyMuPDF 渲染；支持断点续传与页范围试跑。
+通用驱动：PaddleOCR-json + PyMuPDF 渲染；支持断点续传与页范围试跑。
 主流程见 `references/mode-b-ocr.md` B1–B3。
 
 安全约定：

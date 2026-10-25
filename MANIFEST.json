@@ -1,7 +1,7 @@
 {
   "name": "mbx-book-translation",
-  "version": "1.0.1",
-  "generated_at": "2026-10-25T22:49:07+08:00",
+  "version": "1.0.2",
+  "generated_at": "2026-10-25T23:31:11+08:00",
   "files": [
     {
       "path": ".github/workflows/gates.yml",
@@ -15,8 +15,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 847,
-      "sha256": "6f3a6c3a8d6ae90f41801360aa084457c33e6ad4026c1cc299d3434d1637c647"
+      "bytes": 1133,
+      "sha256": "d68d662855379b88efeb3c2c58998854a1614c8a6a1b03268a4e40ba316b7980"
     },
     {
       "path": "LICENSE",
@@ -25,18 +25,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 3325,
-      "sha256": "a4a8d160d8f74cf74a5f8c48112d15e7945b623a4e28f384f5958bbd063eaa97"
+      "bytes": 2552,
+      "sha256": "f417b04a9f839174a77b279fea77679cbbb044091ae9d5152d2614367ce15497"
     },
     {
       "path": "SKILL.md",
-      "bytes": 7640,
-      "sha256": "aea3aa7e10079c91c431eaab22d89a7167544d0d69ea322f52b1ba1a7cb0dd45"
+      "bytes": 7861,
+      "sha256": "731ed3ad732f51c3649afcce5e44e2f21cf18e0ff3d538c8ce36164e7ee75ceb"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 1321,
-      "sha256": "22c4afdefa10f22aca0e33ecfe2e554b37b641ffbbea69376d8b1b4830e36f5d"
+      "bytes": 1338,
+      "sha256": "27465bdf9d72dbd096e714614025921c5b41ce8ebd858e37e7390e9effcbef01"
     },
     {
       "path": "evals/gates/run_gate_tests.py",
@@ -100,8 +100,8 @@
     },
     {
       "path": "references/mode-a-text.md",
-      "bytes": 14466,
-      "sha256": "e8edd1c0e3b13c8eacf00ad527228b6ba1b6fae18d8f5e9b76036e1a58f92aa7"
+      "bytes": 14653,
+      "sha256": "095fbfe2d971036c3213a182c696fb9df8deb5407b0b766fbbbb80cf513929dd"
     },
     {
       "path": "references/mode-b-ocr.md",
@@ -150,8 +150,8 @@
     },
     {
       "path": "references/环境与配置.md",
-      "bytes": 3061,
-      "sha256": "2d7be6b3a36e589ba6c02779d870bf44d4c1929793fcf93535fdc5fbb2c6d32b"
+      "bytes": 3043,
+      "sha256": "c6be978f25f60f497457ab966196f8280689b7f0ef7a2b4fca6a24998ceebe91"
     },
     {
       "path": "references/经验与事故.md",
@@ -180,8 +180,8 @@
     },
     {
       "path": "references/输出结构与命名.md",
-      "bytes": 5215,
-      "sha256": "48e4ad12a603fa13391b1cdc29250ae45fe5bdc3508bed9607531c4f5fd25785"
+      "bytes": 5385,
+      "sha256": "d4ba29b9a174837392fa55a170aca8e9137dc9248e2090e34197d39e9e750138"
     },
     {
       "path": "requirements.txt",
@@ -325,8 +325,8 @@
     },
     {
       "path": "scripts/ocr_pdf.py",
-      "bytes": 6721,
-      "sha256": "d70741c61d7916cb351b02e20d88843686260b4d8f668da6c852159507353869"
+      "bytes": 6864,
+      "sha256": "a845d3fd7484d2e21064e9ebcb38f42faedecdab4b02dd668c27d6e58ab75e88"
     },
     {
       "path": "scripts/patch_preview.py",

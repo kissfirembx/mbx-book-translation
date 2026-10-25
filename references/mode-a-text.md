@@ -5,6 +5,8 @@
 ### A1. 提取与切分
 
 > 先跑通用提取器：PDF 用 `scripts/extract_pdf_text.py`（按书签切章），EPUB 用 `scripts/extract_epub_text.py`（按 spine + TOC）。只有书签/TOC 缺失或版式特殊时才手工 PyMuPDF，并在《翻译任务规格.md》记原因。
+>
+> 长文/连载：按 Markdown 标题或自然小节切 `source_en/`；没有书级目录就跳过目录页解析；输出根用 `<标题>/`；术语库可选，其余仍走 A2–A5。
 
 1. PyMuPDF 提取全部文本；用「每页首行 + 页字符数」扫描定位章节边界
 2. 从目录页（TOC）解析章节清单：`第X章标题/印刷页码`；注意「章节标题跨行」「页码无斜杠分隔」（如 `3.xxx144`）——正则要兼容
