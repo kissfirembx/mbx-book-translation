@@ -1,7 +1,7 @@
 {
   "name": "mbx-book-translation",
   "version": "1.0.0",
-  "generated_at": "2026-10-25T22:42:57+0800",
+  "generated_at": "2026-10-25T22:44:26+08:00",
   "files": [
     {
       "path": ".github/workflows/gates.yml",
