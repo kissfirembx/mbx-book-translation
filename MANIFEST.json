@@ -1,0 +1,397 @@
+{
+  "name": "mbx-book-translation",
+  "version": "1.0.0",
+  "generated_at": "2026-10-25T22:42:57+0800",
+  "files": [
+    {
+      "path": ".github/workflows/gates.yml",
+      "bytes": 373,
+      "sha256": "2eab2e5db24ab0a67c643c1ee07fa15d4f0689356a3b979866f5103a21878e73"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 310,
+      "sha256": "26941debc73a77c4313102f494d109a62447ae5dc0ba0e9ee9f522ff1fe570a1"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 778,
+      "sha256": "fa9ea61df4fdf9630f118cd0ca05bfac5d1b4ffb5b9c261df966c706d9afeaf5"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1064,
+      "sha256": "d3742012c1fdbe212a6e0fc403f57c16b721ef3844ec752132f7976993f12d88"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3325,
+      "sha256": "a4a8d160d8f74cf74a5f8c48112d15e7945b623a4e28f384f5958bbd063eaa97"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 7640,
+      "sha256": "aea3aa7e10079c91c431eaab22d89a7167544d0d69ea322f52b1ba1a7cb0dd45"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1321,
+      "sha256": "22c4afdefa10f22aca0e33ecfe2e554b37b641ffbbea69376d8b1b4830e36f5d"
+    },
+    {
+      "path": "evals/gates/run_gate_tests.py",
+      "bytes": 20177,
+      "sha256": "617980ec8a8dd179c1b9a008371b0018cfc24f0fe06e037bc087e2a143a00ba0"
+    },
+    {
+      "path": "evals/quality/README.md",
+      "bytes": 886,
+      "sha256": "0e880117f6976f325693fa016cb83b45fd1a91d895b79bf6ba74dade16f3d0b1"
+    },
+    {
+      "path": "evals/quality/ab_metrics.py",
+      "bytes": 2716,
+      "sha256": "959e074796f089ea56ea2a6ac11df7d243ef7d7fd162ec991bb6c4f943e971b0"
+    },
+    {
+      "path": "evals/quality/run_quality_checks.py",
+      "bytes": 4977,
+      "sha256": "54205493f0fbb71fa31b5980c595482f8c6c778a748dd1773d9a4f4853514c7c"
+    },
+    {
+      "path": "references/authors/_模板.md",
+      "bytes": 2466,
+      "sha256": "a78456ede79606000833fe4529084c567a39d7695aad2234c6b1f230dc4dd287"
+    },
+    {
+      "path": "references/book-readme模板.md",
+      "bytes": 1717,
+      "sha256": "bcddca1160d5436a3740a269081957dce836785f9d1f0ccfce1504a930086051"
+    },
+    {
+      "path": "references/data/api-pricing.json",
+      "bytes": 2016,
+      "sha256": "a128215c0e145e0bf870a0788b7e213eadafaf40e83ef5f834093ceb90c0575d"
+    },
+    {
+      "path": "references/data/confusions.json",
+      "bytes": 1253,
+      "sha256": "dd77e755dfc7439b2b042c6d041b630f84aaa90498d5bc4f0e6e8817e3d90410"
+    },
+    {
+      "path": "references/data/footers.json",
+      "bytes": 668,
+      "sha256": "fe742c77d8a96d889bfe0d04076d6d932044bb2d2e22e4eba69f0f822308ebaa"
+    },
+    {
+      "path": "references/data/symbols.json",
+      "bytes": 504,
+      "sha256": "ff989f1802ceade0a0194de620ea1b88e979aaa0897bae4b266fdb1435ba5ea1"
+    },
+    {
+      "path": "references/data/常用字表.json",
+      "bytes": 28851,
+      "sha256": "a431c808a9df459aebc0bdd760c45c5a987d6be04fe71b40040361604d69d878"
+    },
+    {
+      "path": "references/executor-prompt-templates.md",
+      "bytes": 20089,
+      "sha256": "235ba9ffdb7989e2aaa65ca3529b42d4dae2cbf4aff905d1f84983c4c7ebc984"
+    },
+    {
+      "path": "references/mode-a-text.md",
+      "bytes": 14466,
+      "sha256": "e8edd1c0e3b13c8eacf00ad527228b6ba1b6fae18d8f5e9b76036e1a58f92aa7"
+    },
+    {
+      "path": "references/mode-b-ocr.md",
+      "bytes": 5188,
+      "sha256": "e301ef8877eecbdb7905af13cf457510d7196f556fd67b470ababe8ffc7793b9"
+    },
+    {
+      "path": "references/mode-c-format.md",
+      "bytes": 2170,
+      "sha256": "497d6dabe11536d11dad3aef42bf727cff7c92d768f4f480bdf093c5f5b7599b"
+    },
+    {
+      "path": "references/types/_模板.md",
+      "bytes": 2390,
+      "sha256": "7f2c4f5ccb0b00e29db6518e1f0eecb9a575d55bdf3fd663207c0e1bb0f12201"
+    },
+    {
+      "path": "references/关于流畅度质检.md",
+      "bytes": 9889,
+      "sha256": "144284c56e1aff8e9ec870c5008536a05ca1a174dd69849004edbd964cc6c6a9"
+    },
+    {
+      "path": "references/已知坑.md",
+      "bytes": 16419,
+      "sha256": "e6e326f97d9d0929450c3f3cc103629a5d43e536869ae6e972ea167b50dc901f"
+    },
+    {
+      "path": "references/平行文本/_模板.md",
+      "bytes": 997,
+      "sha256": "bc0d77e45d6947e10062f048e0fe2e48b7282e46c5b20b0c62e6e2d3d33ff49f"
+    },
+    {
+      "path": "references/成本优化.md",
+      "bytes": 8153,
+      "sha256": "f5f081d5f5ff1f946ee58be4baf2e27a8da9d3419bd912ea257166da3e1744b1"
+    },
+    {
+      "path": "references/数字与笔误陷阱.md",
+      "bytes": 3158,
+      "sha256": "5252d6a37b436080e950cee93e0e0cb8f69d87b4d587b58c70fa82a1a61be6ba"
+    },
+    {
+      "path": "references/源文体检.md",
+      "bytes": 5389,
+      "sha256": "2226acd87b9717bedf561e74c899c949ae6ac778a5268df874966d98911d48c1"
+    },
+    {
+      "path": "references/环境与配置.md",
+      "bytes": 3061,
+      "sha256": "2d7be6b3a36e589ba6c02779d870bf44d4c1929793fcf93535fdc5fbb2c6d32b"
+    },
+    {
+      "path": "references/经验与事故.md",
+      "bytes": 11118,
+      "sha256": "320589d4483c868b943613f2da95edc68aec18e941e8e1c3cb09e18a93d32cef"
+    },
+    {
+      "path": "references/编排与分发.md",
+      "bytes": 5384,
+      "sha256": "e4f093ed4ebba23dfa8fc2c35b30fff2e9a805c040d54b9ac6c55e735f0f29c0"
+    },
+    {
+      "path": "references/翻译规范.md",
+      "bytes": 7288,
+      "sha256": "880e47536d39400f66270bc4b6ddb31783736c346489dffc6e8a39dd1d08a934"
+    },
+    {
+      "path": "references/脚本索引.md",
+      "bytes": 15549,
+      "sha256": "98a1dead67a5da8197d4712440117d3ad526f13ddbe68888efd6edbf756bc3d0"
+    },
+    {
+      "path": "references/译名规范.md",
+      "bytes": 6227,
+      "sha256": "5cd5a64742b196599b0b5ebb58d2b06f06b894f19372e2653378e58065b2a93a"
+    },
+    {
+      "path": "references/输出结构与命名.md",
+      "bytes": 5215,
+      "sha256": "48e4ad12a603fa13391b1cdc29250ae45fe5bdc3508bed9607531c4f5fd25785"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 26,
+      "sha256": "115f01fa272463ae56f59ca55587ae5a81a782a1420392152bf58acd92bbfb0e"
+    },
+    {
+      "path": "scripts/build_slice.py",
+      "bytes": 8580,
+      "sha256": "96937e0dc0859c3a68cf16f9bc358a27f68e777aa6178b320c45105aa0722cee"
+    },
+    {
+      "path": "scripts/check_epub_coverage.py",
+      "bytes": 7929,
+      "sha256": "5c573e12020f07b4dc1b8ba09a0949470c58338a5be38ebedf1f40a44487ccbb"
+    },
+    {
+      "path": "scripts/check_fluency.py",
+      "bytes": 14722,
+      "sha256": "e131fcb0f29df7e4150fe72628b3eda160a3022054b7387e689970ad718eb6e9"
+    },
+    {
+      "path": "scripts/check_glossary_readability.py",
+      "bytes": 5281,
+      "sha256": "d73edcfa73389649666adf6299f74b4e1089b60022ea5e1d009d85c916dedbf8"
+    },
+    {
+      "path": "scripts/check_idiom.py",
+      "bytes": 8643,
+      "sha256": "38776adfbf0c225af0559b04b8e59b873e0f096c20b2bc6b488e7f4abc9c92ce"
+    },
+    {
+      "path": "scripts/check_markup.py",
+      "bytes": 8826,
+      "sha256": "30bbd7498d30c6c89cefc22a79893194d8c14515fc67194007bf61ca834d3ae2"
+    },
+    {
+      "path": "scripts/check_numbers.py",
+      "bytes": 19583,
+      "sha256": "f1ebffa4ffd372b9a5b5ff37d5b9b141020e938edc7669c9202379e751fa27d4"
+    },
+    {
+      "path": "scripts/check_paragraph_map.py",
+      "bytes": 14388,
+      "sha256": "42af5b3cc00b7c5da210241152f4271893691bced02df3ebe364dcf7fd5186ae"
+    },
+    {
+      "path": "scripts/check_pdf_coverage.py",
+      "bytes": 4724,
+      "sha256": "2b888f9975c308e790c4652193317cb9eda72fce4bd78df7d997377ff5c143ce"
+    },
+    {
+      "path": "scripts/check_rare_chars.py",
+      "bytes": 4247,
+      "sha256": "5cfc78eed100c17ebdb46056753f4b32190599f676a10fd0c27a456b74698283"
+    },
+    {
+      "path": "scripts/check_structure.py",
+      "bytes": 9142,
+      "sha256": "01789c6503ac996cd3ba6bc7d5cf507886e9c38b9fe1e68dd0c73bd445ca04c7"
+    },
+    {
+      "path": "scripts/check_unit_residue.py",
+      "bytes": 5338,
+      "sha256": "9340b1a9569f6d09806b779a9902b05bbd4d3c2f1c409a5eff3900fe8a64870f"
+    },
+    {
+      "path": "scripts/check_word_rarity.py",
+      "bytes": 6970,
+      "sha256": "e80a9e4501f57bf437e2561c9b6e53835826f1a56cb3f90868b46bcdfee01890"
+    },
+    {
+      "path": "scripts/clean_flat_lists.py",
+      "bytes": 7066,
+      "sha256": "3c1729e1b44c24a6b1266abf5dc959c2706595444aefac14d86447e0e530e1b9"
+    },
+    {
+      "path": "scripts/clean_running_heads.py",
+      "bytes": 9461,
+      "sha256": "6b19cc9a2103b9622c303ae519d50380a8f580a70f97c038fa4dd7d7ada48e02"
+    },
+    {
+      "path": "scripts/cost_report.py",
+      "bytes": 4250,
+      "sha256": "407836ed54d5b0c9fa6447ee7b96951692b5aa20dae5c8e85adf5e452e9fead4"
+    },
+    {
+      "path": "scripts/draft_glossary.py",
+      "bytes": 6258,
+      "sha256": "45bec3f3c07aedffd74f18808f2384cdae30c1b6a3bf148f5b93348419699b8b"
+    },
+    {
+      "path": "scripts/error_rate.py",
+      "bytes": 9605,
+      "sha256": "73e81c0634979876031900af920710e9f7f490f2531e50975aa801724073700d"
+    },
+    {
+      "path": "scripts/estimate_cost.py",
+      "bytes": 10192,
+      "sha256": "34dc0bce01724c268206ec788854712553141fed4831c4a24a193f1d24bb368a"
+    },
+    {
+      "path": "scripts/extract_captions.py",
+      "bytes": 3592,
+      "sha256": "97fe538074bbf586105d10cd5775bf9c99e1abb703f883c62c7805c146249597"
+    },
+    {
+      "path": "scripts/extract_epub_text.py",
+      "bytes": 10526,
+      "sha256": "e46c318dc61bc8e6af323430d2a5b8aa4683343a596f902f6d5671ab213ac618"
+    },
+    {
+      "path": "scripts/extract_figs.py",
+      "bytes": 5555,
+      "sha256": "0f9a7971f7be6bcd55ff1a7c6f0057be6e84ed806a4035a23d503d18fd1a5dc1"
+    },
+    {
+      "path": "scripts/extract_pdf_text.py",
+      "bytes": 9132,
+      "sha256": "e2e178cc39ad9b3671e58c70993e73db609f7c4e416cec81d04a4017db8612cc"
+    },
+    {
+      "path": "scripts/fix_recognition.py",
+      "bytes": 2029,
+      "sha256": "d51b8f2ce3ba6338a4f2d6a3f9b074425c6644b88480bfd1c62755c6301b7822"
+    },
+    {
+      "path": "scripts/mbx_config.py",
+      "bytes": 2103,
+      "sha256": "b5a652b897ce2dccbb9697935eb67a5562c9a3a11063dd3d49dd907e4f544879"
+    },
+    {
+      "path": "scripts/merge_book.py",
+      "bytes": 5497,
+      "sha256": "6a3071e8749f95552a858a101b393ffba7d7bc0a0b0a855eefe53afcd71f33dc"
+    },
+    {
+      "path": "scripts/normalize_symbols.py",
+      "bytes": 2389,
+      "sha256": "448c2a234acaf3e3b3f1be0fb118234293ffd374469b48916523dc40e7d44c82"
+    },
+    {
+      "path": "scripts/ocr_pdf.py",
+      "bytes": 6721,
+      "sha256": "d70741c61d7916cb351b02e20d88843686260b4d8f668da6c852159507353869"
+    },
+    {
+      "path": "scripts/patch_preview.py",
+      "bytes": 13148,
+      "sha256": "52feb3fe8d9fec6320a94d8841de556e42ebf1cdf5ae1f7500ae09f6a4bb11e8"
+    },
+    {
+      "path": "scripts/preflight_probe.py",
+      "bytes": 12121,
+      "sha256": "b4fdcb28e3b563c5a6b877971389ddb87acdaef690491af91684b3e35926b968"
+    },
+    {
+      "path": "scripts/qa_report.py",
+      "bytes": 6560,
+      "sha256": "044bfd733d0f3a2fa670d1826049e6135201550ca70cbcad52220c83101739e5"
+    },
+    {
+      "path": "scripts/rebuild_layout.py",
+      "bytes": 2826,
+      "sha256": "0242b30d37a4d229b0a91249bb49115ba5707b497952c25d6197d0f30f870136"
+    },
+    {
+      "path": "scripts/rebuild_source_from_ocr.py",
+      "bytes": 5299,
+      "sha256": "b46ece1d355001111232a9c5079bde813df72b2bef2f746cf4019440db384e28"
+    },
+    {
+      "path": "scripts/rebuild_table_from_ocr.py",
+      "bytes": 5845,
+      "sha256": "21b7fbc080dad27397b39ddab9362d14fe32c9b77f911f0fc548eca6e00c36e8"
+    },
+    {
+      "path": "scripts/restore_tables.py",
+      "bytes": 2530,
+      "sha256": "68576371f42f6fdb7f9b04706013816d0305cbd5c6db012e210793fd61a7821f"
+    },
+    {
+      "path": "scripts/rewrap_source_lines.py",
+      "bytes": 9201,
+      "sha256": "b4fe8ef2a1b772e5505eeecaa46b7a22cc7b9f108dbd8686211996f43849de3a"
+    },
+    {
+      "path": "scripts/rotate_round.py",
+      "bytes": 6093,
+      "sha256": "66d9ab41049c553728f1982d1bbf9ff6138578627f0a34fac47ab4e424b46e2e"
+    },
+    {
+      "path": "scripts/split_md_chapters.py",
+      "bytes": 4569,
+      "sha256": "d418134d01ea6b886edccc254062c525e6b8f633a08c7cd5f9c0c5a9318308c0"
+    },
+    {
+      "path": "scripts/transforms/escape_hash.py",
+      "bytes": 1762,
+      "sha256": "96ce05f754a694a837ebe7b2058c6f07a01dbda6e8655a8efd2e19146f9209f9"
+    },
+    {
+      "path": "scripts/transforms/italic_to_bold.py",
+      "bytes": 2056,
+      "sha256": "539fb42539c8e1ded96d1607868dd9162100861bc1d243a4615e1bd8240606d1"
+    },
+    {
+      "path": "scripts/unwrap_paragraphs.py",
+      "bytes": 11154,
+      "sha256": "5afd3ef0e6d80e7093f39d6a3fe6e4f8816da646b0efff9d57ddecf654ae7bc7"
+    }
+  ]
+}

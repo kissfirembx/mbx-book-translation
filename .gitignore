@@ -1,0 +1,15 @@
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 评估结果（本地，默认不发布；evals.json 与 results 保留在本地）
+evals/results/*.json.tmp
+
+# 本机配置（不发布）
+references/环境与配置.local.env
+.env.local
+
+# 发布构建与私有过程文件（不发布）
+dev/
+dist/

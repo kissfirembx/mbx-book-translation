@@ -1,0 +1,15 @@
+# Changelog
+
+## 1.0.0 — 2026-10-25
+
+首个公开版。
+
+- 整本书翻译：PDF / EPUB / DOCX / 扫描件。
+- 扫描书 OCR：`ocr_pdf.py` 逐页渲染 → PaddleOCR-json → 按页 JSON；`--pages` 试跑、断点续传、`--md-out` 合并带页码标记的 MD。
+- 术语库、作者档案、类型档案与本章内联切片（`build_slice.py`）。
+- 零 token 门禁：标记、单位、数字、段落边界、习语、生僻字、结构、覆盖率等。
+- 质量对照工具：`run_quality_checks.py`、`ab_metrics.py`。
+- 配置层：`MBX_*` 环境变量 + 本机 `环境与配置.local.env`；不写死个人路径。
+- 门禁自测 42 条断言 / 13 个用例组。
+
+不包含：真实书译文、书摘、国家标准全文、扫描书整本 OCR 实测数据。

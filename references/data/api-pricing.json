@@ -1,0 +1,51 @@
+{
+  "_说明": "各家 API 的计费单价缓存。**单价不许凭记忆填**——本文件只存「查到的官方值」，每次查完更新，并保留抓取日期与来源。开工时先问使用者：是否按上次的价格算（是/否）；换 API 或换计费方式时，请使用者提供或由 Agent 去官方页查，然后更新本文件。**时效：抓取日期超过 30 天即视为过期，开工时重新核对官方价**（`fetched_at` 字段）。",
+  "_用法": "estimate_cost.py --provider <key> 读取本文件；缺 key 时提示补录，不猜。",
+  "_字段": {
+    "currency": "币种（**务必看清**，DeepSeek 官方页是 USD）",
+    "unit": "计价单位，统一为每百万 token",
+    "off_peak / peak": "优惠时段 / 高峰时段单价",
+    "off_peak_note": "优惠时段说明"
+  },
+  "deepseek": {
+    "display_name": "DeepSeek 官方 API",
+    "currency": "USD",
+    "unit": "per_1M_tokens",
+    "off_peak_note": "高峰时段为 UTC 周一至周五 01:00-04:00 与 06:00-10:00，其余（含整周末与中国法定节假日）为优惠时段，优惠价为高峰价的一半。",
+    "fetched_at": "2026-10-07",
+    "source": "https://api-docs.deepseek.com/quick_start/pricing",
+    "models": {
+      "deepseek-flash": {
+        "input_cache_hit": {
+          "off_peak": 0.003,
+          "peak": 0.006
+        },
+        "input_cache_miss": {
+          "off_peak": 0.15,
+          "peak": 0.3
+        },
+        "output": {
+          "off_peak": 0.6,
+          "peak": 1.2
+        },
+        "context": "1M",
+        "note": "旧名 deepseek-v4-flash 同价同版本"
+      },
+      "deepseek-v4-pro": {
+        "input_cache_hit": {
+          "off_peak": 0.022,
+          "peak": 0.044
+        },
+        "input_cache_miss": {
+          "off_peak": 0.66,
+          "peak": 1.32
+        },
+        "output": {
+          "off_peak": 1.98,
+          "peak": 3.96
+        },
+        "context": "1M"
+      }
+    }
+  }
+}

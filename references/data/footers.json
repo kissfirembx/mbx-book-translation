@@ -1,0 +1,16 @@
+{
+  "_说明": "页脚/版权行判定正则（clean_running_heads.py --footers 读取）。patterns 是通用规则；book_specific 保留单本书实测的版权行，可按需增删。每项是合法 Python 正则，合并时用 | 连接、忽略大小写。",
+  "patterns": [
+    "copyrigh\\w*\\s*[©@O0]?\\s*20\\d\\d\\s*by\\s*[\\w\\s,.]{0,26}",
+    "NOT\\s*FOR\\s*DISTRIBUTION\\s*\\d{0,4}",
+    "SCAN\\s*ME\\s*\\d{0,4}",
+    "版权\\s*[©@]?\\s*20\\d\\d[^。\\n]{0,44}",
+    "版权所有",
+    "禁止分发",
+    "不得分发",
+    "INTERNAL DOCUMENT"
+  ],
+  "book_specific": [
+    "copyrigh\\w*\\s*[©@O0]?\\s*20\\d\\d\\s*by\\s*BUMBLE[\\w\\s,.]{0,26}"
+  ]
+}

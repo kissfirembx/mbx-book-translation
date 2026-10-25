@@ -1,0 +1,12 @@
+{
+  "_说明": "符号规范化规则。中文标点用全角；中文引号统一为「」；符号类名在 normalize_symbols.py 中映射。",
+  "quotes_cn": ["「", "」"],
+  "quotes_en_whitelist": ["\"Thank you\"", "\"Money\"", "\"Incredible India\"", "\"monsoon\"", "\"One India, One rupee\""],
+  "replace": {
+    "一一－": "——",
+    "＞＞": "》",
+    "＇": "」",
+    "｀": "「"
+  },
+  "note": "英文词的 ASCII 引号保留；『——』按上下文还原，勿一律替换。"
+}
