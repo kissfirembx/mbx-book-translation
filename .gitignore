@@ -10,6 +10,5 @@ evals/results/*.json.tmp
 references/环境与配置.local.env
 .env.local
 
-# 发布构建与私有过程文件（不发布）
-dev/
+# 公共发布副本（独立 Git，父仓库忽略）
 dist/

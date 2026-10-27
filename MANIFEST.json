@@ -1,7 +1,7 @@
 {
   "name": "mbx-book-translation",
-  "version": "1.0.5",
-  "generated_at": "2026-10-25T23:52:30+08:00",
+  "version": "1.0.6",
+  "generated_at": "2026-10-27T21:44:15+08:00",
   "files": [
     {
       "path": ".github/workflows/gates.yml",
@@ -10,13 +10,13 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 310,
-      "sha256": "26941debc73a77c4313102f494d109a62447ae5dc0ba0e9ee9f522ff1fe570a1"
+      "bytes": 308,
+      "sha256": "b064af866caecd1809c911a423017f9d53aec4ed1de589806d287f2ca217ed3b"
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1969,
-      "sha256": "c59a7c085dcdd36654be4108890ff0c79c7e16744a9dc108449d88916ef588ff"
+      "bytes": 2175,
+      "sha256": "21f24b8639e32e2d6fe7aa7258598e93201887f6a0b6025b2b4c04aefd2512d9"
     },
     {
       "path": "LICENSE",
@@ -170,8 +170,8 @@
     },
     {
       "path": "references/脚本索引.md",
-      "bytes": 15844,
-      "sha256": "9f8ed63ec4293635d4a333f0ad9153e73b6b0c978b9fb699730fbee52a555755"
+      "bytes": 15749,
+      "sha256": "e1e2d80923f12facccc0e19efab331ba07d39a304de5268977c4ce1d58bb1695"
     },
     {
       "path": "references/译名规范.md",
